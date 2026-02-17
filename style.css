@@ -584,3 +584,21 @@ h1 {
   color: #1A535C;
   font-weight: 600;
 }
+
+
+
+
+/* Опускаем легенду карты чуть ниже */
+.leaflet-control.legend {
+    bottom: -37px !important;  /* уменьши это значение, если нужно ещё ниже */
+}
+/* Легенда поверх карты — сдвинута правее */
+.leaflet-control.legend {
+    position: relative !important;
+    z-index: 1000 !important;
+    background: white !important;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3) !important;
+    margin-bottom: 20px !important;
+    margin-right: 20px !important;  /* сдвиг вправо (увеличь цифру — ещё правее) */
+    right: -17px !important;        /* тоже сдвиг вправо (можно добавить, если нужно ещё) */
+}
